@@ -1,7 +1,9 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from './Layout'
 
 export default (): JSX.Element => {
+  console.log(Layout)
+
   return (
     <Layout title="Contact us">
       <div>Contact</div>

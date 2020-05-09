@@ -1,20 +1,18 @@
 import React from 'react'
-// import { Basic, Combined, Animated, bounce } from '../shared/styles'
+import { Basic, Combined, Animated, bounce } from '../shared/styles'
 
-// const Home: React.FC = () => (
-//   <div>
-//     <Basic>Cool Styles</Basic>
+const Home: React.FC = (): JSX.Element => (
+  <div>
+    <h1>Home Page</h1>
 
-//     <Combined>
-//       With <code>:hover</code>.
-//     </Combined>
+    <Basic>Cool Styles</Basic>
 
-//     <Animated animation={bounce}>Let&apos;s bounce.</Animated>
-//   </div>
-// )
+    <Combined>
+      With <code>:hover</code>.
+    </Combined>
 
-// export default Home
+    <Animated animation={bounce}>Let&apos;s bounce.</Animated>
+  </div>
+)
 
-const IndexPage = (): JSX.Element => <h1>Test</h1>
-
-export default IndexPage
+export default Home
