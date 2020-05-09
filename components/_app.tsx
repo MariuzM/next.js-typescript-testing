@@ -3,7 +3,13 @@ import { CacheProvider } from '@emotion/core'
 import { cache } from 'emotion'
 import { globalStyles } from '../shared/styles'
 
-export default function App({ Component, pageProps }): JSX.Element {
+export default function App({
+  Component,
+  pageProps,
+}: {
+  Component: any
+  pageProps: string
+}): JSX.Element {
   return (
     <CacheProvider value={cache}>
       {globalStyles}

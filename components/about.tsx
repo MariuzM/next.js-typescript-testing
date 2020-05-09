@@ -8,6 +8,7 @@ export default (): JSX.Element => {
 
       <div className="hello">
         <p>Hello World</p>
+
         <style jsx>{`
           .hello {
             font: 15px Helvetica, Arial, sans-serif;

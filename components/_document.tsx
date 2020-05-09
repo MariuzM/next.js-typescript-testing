@@ -3,6 +3,16 @@ import { NextComponentType } from 'next'
 import { Head, Main, NextScript } from 'next/document'
 import { extractCritical } from 'emotion-server'
 
+function name(sss: string): void {
+  return console.log(sss)
+}
+
+const name2 = (sss: string): JSX.Element => {
+  return <h1>Test{sss}</h1>
+}
+
+// export default name2
+
 const MyDocument: NextComponentType<Head, Main, NextScript> = () => {
   return (
     <html lang="en">
