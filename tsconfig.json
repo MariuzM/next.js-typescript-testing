@@ -13,8 +13,9 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "strictNullChecks": true,
     "strict": false
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "_storage"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

@@ -1,9 +1,15 @@
 import React from 'react'
 import { Basic, Combined, Animated, bounce } from '../shared/styles'
+import { css } from '@emotion/core'
+
+const test = css`
+  color: blue;
+  font-size: 30px !important;
+`
 
 const Home: React.FC = (): JSX.Element => (
   <div>
-    <h1>Home Page</h1>
+    <h1 css={test}>Home Page</h1>
 
     <Basic>Cool Styles</Basic>
 
