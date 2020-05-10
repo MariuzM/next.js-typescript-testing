@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { Basic, Combined, Animated, bounce } from '../shared/styles'
-import { css, jsx } from '@emotion/core'
+import { css } from '@emotion/core'
 
 const test = css`
   color: blue;
   font-size: 30px !important;
 `
 
-const Home = (): JSX.Element => {
+const Home = () => {
   useEffect(() => {
     console.log(window)
   }, [])
