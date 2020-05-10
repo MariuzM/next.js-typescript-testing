@@ -1,5 +1,5 @@
 import React from 'react'
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Link from 'next/link'
 import { css } from '@emotion/core'
 
@@ -24,9 +24,9 @@ export default class MyDocument extends Document {
     return { ...initialProps }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
@@ -41,11 +41,21 @@ export default class MyDocument extends Document {
             <Link href="/page1">
               <a>Page 1</a>
             </Link>
+          </span>{' '}
+          <span css={text}>
+            <Link href="/page2">
+              <a>Page 2</a>
+            </Link>
+          </span>{' '}
+          <span css={text}>
+            <Link href="/page3">
+              <a>Page 3</a>
+            </Link>
           </span>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }

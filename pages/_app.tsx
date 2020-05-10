@@ -1,14 +1,11 @@
-import React from 'react'
-// import { CacheProvider } from '@emotion/core'
-// import { cache } from 'emotion'
-// import { globalStyles } from '../shared/styles'
+import React, { ReactType } from 'react'
 import Head from 'next/head'
 
 export default function App({
   Component,
   pageProps,
 }: {
-  Component: any
+  Component: ReactType
   pageProps: string
 }): JSX.Element {
   return (
