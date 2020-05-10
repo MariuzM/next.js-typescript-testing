@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Basic, Combined, Animated, bounce } from '../shared/styles'
-import { css, jsx } from '@emotion/core'
+import { css } from '@emotion/core'
 
 const test = css`
   color: blue;
@@ -8,10 +8,6 @@ const test = css`
 `
 
 const Home = (): JSX.Element => {
-  useEffect(() => {
-    console.log(window)
-  }, [])
-
   return (
     <div>
       <h1 css={test}>Home Page</h1>
