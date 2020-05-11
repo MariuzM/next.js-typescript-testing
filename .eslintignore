@@ -2,3 +2,5 @@
 /node_modules/**
 /tests/fixtures/**
 /tmp/**
+config
+build
