@@ -1,5 +1,12 @@
 import React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
+} from 'next/document'
 import Link from 'next/link'
 import { css } from '@emotion/core'
 
@@ -19,10 +26,10 @@ const text = css`
 `
 
 export default class MyDocument extends Document {
-  // static async getInitialProps(ctx) {
-  //   const initialProps = await Document.getInitialProps(ctx)
-  //   return { ...initialProps }
-  // }
+  static async getInitialProps(context: DocumentContext): Promise<DocumentInitialProps> {
+    const initialProps = await Document.getInitialProps(context)
+    return { ...initialProps }
+  }
 
   render(): JSX.Element {
     return (
