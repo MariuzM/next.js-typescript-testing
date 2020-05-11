@@ -1,13 +1,12 @@
 import React, { ReactType } from 'react'
 import Head from 'next/head'
 
-export default function App({
-  Component,
-  pageProps,
-}: {
+type Prop = {
   Component: ReactType
   pageProps: string
-}): JSX.Element {
+}
+
+export default function App({ Component, pageProps }: Prop): JSX.Element {
   return (
     <div>
       {/* <CacheProvider value={cache}> */}
