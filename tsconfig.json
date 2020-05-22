@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "preserve",
@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules", "_storage"],
+  "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

@@ -10,12 +10,5 @@ module.exports = {
         cssPropOptimization: true,
       },
     ],
-    '@babel/plugin-proposal-class-properties',
-    [
-      '@babel/plugin-transform-runtime',
-      {
-        regenerator: true,
-      },
-    ],
   ],
 }

@@ -4,7 +4,7 @@ const Page1 = ({ name }: { name: number }): JSX.Element => {
   return <h1>This is the page of: {name}</h1>
 }
 
-Page1.getInitialProps = ({ query }: { query: { name: number } }): object => {
+Page1.getInitialProps = ({ query }: { query: { name: number } }): Record<string, unknown> => {
   return { name: query.name }
 }
 

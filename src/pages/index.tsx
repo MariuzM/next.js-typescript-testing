@@ -1,5 +1,5 @@
 import React from 'react'
-import { Basic, Combined, Animated, bounce } from '../shared/styles'
+import { Basic, Combined, Animated, bounce } from '../styles/styles'
 import { css } from '@emotion/core'
 
 const test = css`
@@ -7,9 +7,16 @@ const test = css`
   font-size: 30px !important;
 `
 
+const test2 = {
+  name: 'marius',
+  date: 22,
+}
+
+console.log('sds')
+
 const Home = (): JSX.Element => {
   return (
-    <div>
+    <>
       <h1 css={test}>Home Page</h1>
 
       <Basic>Cool Styles</Basic>
@@ -19,7 +26,7 @@ const Home = (): JSX.Element => {
       </Combined>
 
       <Animated animation={bounce}>Let&apos;s bounce.</Animated>
-    </div>
+    </>
   )
 }
 
