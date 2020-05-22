@@ -7,10 +7,10 @@ const test = css`
   font-size: 30px !important;
 `
 
-const test2 = {
-  name: 'marius',
-  date: 22,
-}
+// const test2 = {
+//   name: 'marius',
+//   date: 22,
+// }
 
 console.log('sds')
 
